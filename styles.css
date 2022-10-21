@@ -30,24 +30,24 @@ h1{
 }
 
 h3{
-	background-color: orangered;
+  background-color: orangered;
   text-align: center;
   font-size: 1.7em;
   padding-top: 0.3em;
 }
 
 .article{
-	background-color: #102526;
-	width: 580px;
-	height: 350px;
-   border-radius: 50px;
-	padding: 20px;
-	box-shadow: 7px 7px 10px;
-	position: relative;
+  background-color: #102526;
+  width: 580px;
+  height: 350px;
+  border-radius: 50px;
+  padding: 20px;
+  box-shadow: 7px 7px 10px;
+  position: relative;
   left: 38em;
   animation-name: presentation;
   animation-duration: 4s;
-   }
+}
 
 .img{
 	width: 40%;
@@ -73,7 +73,7 @@ h3{
   }
 
   100%{
-
+    left: 10em;
   }
  }
 
