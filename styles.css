@@ -1,8 +1,28 @@
-body{
-	background-color: #333;
-	margin: 0;
+ *{
+  box-sizing: border-box;
+  margin: 0;
 }
 
+body{
+  background-image: url(img/fondo.webp);
+  background-size: 85% 49%;
+}
+
+h1{
+  font-size: 5em;
+  text-align: center;
+}
+
+.presentation__text{
+  color: rgb(155, 255, 55);
+  font-size: 3.4em;
+  position: relative;
+  top: 4em;
+  left: 2em;
+  display: inline-block;
+  animation-name: presentation__text;
+  animation-duration: 9s;
+ } 
 
 .subtitle-2{
   font-size: 60px;
@@ -11,20 +31,69 @@ body{
 
 h3{
 	background-color: orangered;
+  text-align: center;
+  font-size: 1.7em;
+  padding-top: 0.3em;
 }
 
 .article{
-	background-color: pink;
+	background-color: #102526;
 	width: 580px;
 	height: 350px;
-	margin-left: auto;
-	margin-right: auto;
-	border-radius: 50px;
+   border-radius: 50px;
 	padding: 20px;
 	box-shadow: 7px 7px 10px;
 	position: relative;
+  left: 38em;
+  animation-name: presentation;
+  animation-duration: 4s;
+   }
+
+.img{
+	width: 40%;
+	height: 240px;
+	display: inline-block;
+	border-radius: 180px;
+}
+
+ .link{
+ 	background-color: cadetblue;
+  color: black;
+  padding: 10px;
+  border-radius: 20px;
+  position: relative;
+  left: 250px;
+  text-decoration: none;
  }
 
+ @keyframes presentation__text{
+  0%{
+    filter: opacity(10%);
+    left: 10em;
+  }
+
+  100%{
+
+  }
+ }
+
+@keyframes presentation{
+  0%{
+    top: 4em;
+    left: 24em;
+     filter: opacity(5%);
+  }
+   
+   50%{
+    left: 24em;
+    }
+
+  100%{  
+    top: 0;
+    left: 38em;
+    filter: opacity(100%);
+  }
+}
 
 .article__1-1,
 .article__1-2,
@@ -39,28 +108,16 @@ h3{
  background-image: linear-gradient(10deg, rgba(0,150,0,0.5) 20%, orange); 
  border-radius: 50px;
  box-shadow: 10px 10px 15px;
- padding: 10px;
+ overflow: hidden;
  display: inline-block;
  margin-left: 60px;
  margin-top: 50px;
 }
-
  .article__1{
  background-color: green;
  margin-top: 150px;
- background-image: linear-gradient(to left, blue,orangered,green);
- }
-
-
-
-
-.img{
-	width: 40%;
-	height: 240px;
-	display: inline-block;
-	border-radius: 180px;
+ background-image: radial-gradient( blue,black);
 }
-
 
 .article__1-img1,
 .article__1-img2,
@@ -72,26 +129,32 @@ h3{
 .article__1-img8{
 	width: 100%;
 	height: 20vh;
+  transition: all 1s;
+  margin-top: 2em;
+  padding: 0.3em;
+}
+
+.article__1-img1:hover,
+.article__1-img2:hover,
+.article__1-img3:hover,
+.article__1-img4:hover,
+.article__1-img5:hover,
+.article__1-img6:hover,
+.article__1-img7:hover,
+.article__1-img8:hover{
+  transform: rotate(45deg);
+  transform: scale(1.2);
 }
 
 .text{
 	display: inline-block;
 	width: 50%;
 	margin-left: 20px;
+  position: relative;
+  top: -2em;
+  color: lightgreen;
  }
-
 
  .text-1{
  	font-size: 32px;
- }
-
-
- .link{
- 	background-color: cadetblue;
-    color: black;
-    padding: 10px;
-    border-radius: 20px;
-    position: relative;
-    left: 250px;
-    text-decoration: none;
  }
