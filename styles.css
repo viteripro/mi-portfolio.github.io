@@ -432,7 +432,6 @@ h1{
 
 
 
-
 *{
     box-sizing: border-box;
     padding: 0;
@@ -440,10 +439,18 @@ h1{
 }
 
 :root {
-  --primary:#160586;
-  --dark2:#858558;
+  --primary:#18db86;
+  --secondary:white;
+  --secondary-light:rgb(173,173,173);
+  --dark1:#222222;
+  --dark2:#050558;
 }
 
+body{
+  font-size: 18px;
+  font-family: 'Signika',sans-serif;
+  color: var(--secondary);
+}
 .navbar{
     display: flex;
     justify-content: flex-end;
@@ -471,6 +478,39 @@ h1{
     width: 100%;
     height: 530px;
     opacity: 0.35;
+}
+
+span{
+  color: var(--primary);
+}
+
+/*Briefcase*/
+
+.briefcase{
+  background-color: var(--dark1);
+}
+
+.briefcase-section h2{
+  padding: 40px;
+  text-align: center;
+}
+
+.briefcase-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(290px,auto));
+  gap: 15px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.briefcase-grid img{
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+
+.briefcase-grid img:hover{
+  transform: scale(1.1);
 }
 
 /*circle profile*/
@@ -522,4 +562,56 @@ h1{
   height: 202px;
   border-radius: 50%;
 }
+
+.square-text{
+  font-size: 1.9rem;
+  color: var(--secondary);
+  top: 380px;
+  z-index: 11;
+}
+
+.squeare-text-2{
+  font-size: 1rem;
+  color: var(--secondary);
+  top: 418px;
+  z-index: 11;
+}
+
+.square-text-3{
+  font-size: 1.3rem;
+  color: var(--secondary);
+  top: 490px;
+  z-index: 11;
+}
+
+.square-text-3:hover{
+  border-bottom: var(--primary) solid;
+}
+
+.square-text-3 a{
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+.contact-icon{
+  top: 450px;
+  z-index: 11;
+}
+.contact-icon img{
+  width: 40px;
+  margin: 0 10px;
+}
+
+.contact-icon img:hover{
+  transform: scale(1.2);
+}
+
+
+
+/*skills*/
+
+section.skills{
+  background-color: var(--dark1);
+}
+
 
